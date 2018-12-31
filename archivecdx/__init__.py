@@ -1,15 +1,17 @@
 from archivecdx.grab import get
+from time import sleep
 
 # no resumption key/counter support, if you need them then make a PR and handle them yourself
 DONT_USE = "showResumeKey resumeKey showDupeCount showSkipCount".split()
 
 class Listing:
-	def __init__(self,url,**kwargs):
+	def __init__(self,url,delay=1,**kwargs):
 		self.url = url
 		if not "page_count" in kwargs:
 			kwargs["showNumPages"]="true"
 			self.page_count = get(url,lambda x: x,**kwargs)
 			del kwargs["showNumPages"]
+			sleep(delay)
 		else:
 			self.page_count = kwargs["page_count"]
 			del kwargs["page_count"]
