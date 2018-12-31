@@ -1,3 +1,3 @@
-# minerbot-phoenix
+# archive-cdx
 
-The new generation of minerbot v1: minerbot Phoenix.
+A library to interact with the archive.org Wayback Machine CDX server.
