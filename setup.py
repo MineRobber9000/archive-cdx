@@ -12,7 +12,7 @@ setup(
 
     version='0.1.0dev',  # Required
 
-    description='Interfaces with the Wayback CDX server',  # Optional
+    description='A library to interact with the archive.org Wayback Machine CDX server.',  # Optional
 
    long_description=long_description,  # Optional
 
