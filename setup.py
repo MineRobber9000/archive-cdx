@@ -10,7 +10,7 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
 setup(
     name='archive-cdx',  # Required
 
-    version='0.1.0',  # Required
+    version='0.1.1',  # Required
 
     description='A library to interact with the archive.org Wayback Machine CDX server.',  # Optional
 
@@ -93,7 +93,7 @@ setup(
     #
     # For an analysis of "install_requires" vs pip's requirements files see:
     # https://packaging.python.org/en/latest/requirements.html
-    # install_requires=['six'],  # Optional
+    install_requires=['requests'],  # Optional
 
     # List additional groups of dependencies here (e.g. development
     # dependencies). Users will be able to install these using the "extras"
