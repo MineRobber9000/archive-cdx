@@ -10,7 +10,7 @@ with open(path.join(here, 'README.md'), encoding='utf-8') as f:
 setup(
     name='archive-cdx',  # Required
 
-    version='0.1.0dev',  # Required
+    version='0.1.0',  # Required
 
     description='A library to interact with the archive.org Wayback Machine CDX server.',  # Optional
 
